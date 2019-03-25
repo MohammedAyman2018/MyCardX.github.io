@@ -1,0 +1,181 @@
+$mainFont: "Gotham";
+$mainFontWieght: 600;
+$mainFontSize: 60px;
+
+body {
+    font-family: $mainFont;
+
+    nav.navbar {
+        margin-bottom: 0px ;
+        border: none ;
+        border-radius: 0 ;
+        background-color: transparent ;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .navbar-header {
+            .navbar-toggle {
+                border: none;
+                direction: rtl;
+
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: transparent;
+                }
+
+                span {
+                    background-color: #000 !important;
+                    height: 3px;
+                    width: 22px;
+
+                    &:nth-child(3) {
+                        width: 15px;
+                    }
+
+                    &:nth-child(4) {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+
+        .nav {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999999999;
+            background: rgba(0, 0, 0, 0.8);
+
+            .outer-close {
+                background: transparent;
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 85px;
+                height: 85px;
+                cursor: pointer;
+                
+                a {
+                    border: none;
+                    display: block;
+                    position: fixed;
+                    top: 40px;
+                    right: 60px;
+                    z-index: 3;
+                    cursor: pointer;
+                    font-family: sans-serif;
+                    background-color: transparent;
+                    &:hover{
+                        background-color: transparent !important;
+                    }
+                    span {
+                        &:before,
+                        &:after {
+                            background-color: white !important; 
+                            border-radius: 4px;
+                            height: 5px;
+                            width: 35px;
+                            position: absolute;
+                            display: block;
+                            content: '';
+                        }
+
+                        &:before {
+                            -webkit-transform: rotate(45deg);
+                            transform: rotate(45deg);
+                        }
+
+                        &:after {
+                            -webkit-transform: rotate(-45deg);
+                            transform: rotate(-45deg);
+                        }
+                        
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    margin: 18px 0;
+
+                    &.active a {
+                        color: #4770d9 !important;
+                    }
+
+                    a {
+                        color: #fff;
+                        display: inline-block;
+                        font-size: 44px;
+                        line-height: 100%;
+                        padding: 0;
+                        transition: all .1s ease-in-out;
+                        user-select: none;
+                        text-decoration: none;
+
+                        &:hover {
+                            -webkit-transform: scale(1.1);
+                            transform: scale(1.1);
+                        }
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            width: 50%;
+                            height: 2px;
+                            bottom: -10px;
+                            left: 25%;
+                            background: white;
+                            visibility: hidden;
+                            -webkit-transform: scaleX(0);
+                            transform: scaleX(0);
+                            transition: all 0.3s ease-in-out 0s;
+                        }
+
+                        &:hover:before {
+                            visibility: visible;
+                            -webkit-transform: scaleX(2);
+                            transform: scaleX(2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .home{
+        height: 100vh;
+
+        img{
+            opacity: 0.1;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-header {
+        float: none;
+        
+        .navbar-toggle {
+            display: block
+        }
+        
+        a {
+            padding: 10px
+        }
+    }
+}
+
+.sticky {
+    position: fixed !important      ;
+    z-index: 1213123 !important     ;
+    top: 0 !important       ;
+    width: 100% !important      
+}
