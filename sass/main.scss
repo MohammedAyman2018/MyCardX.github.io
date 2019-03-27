@@ -1,16 +1,42 @@
 $mainFont: "Gotham";
-$mainFontWieght: 600;
+$mainColor: #5a5a5a;
+$normalFont: 17px;
+$mediumFont: 24px;
+$mainFontWieght: 400;
 $mainFontSize: 60px;
 
 body {
   font-family: $mainFont;
+  font-weight: $mainFontWieght;
+  position: relative;
+
+  .background-lines{
+    display: flex;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+
+    .container{
+      display: flex;
+      justify-content: space-between;
+
+      .single-line{
+        background-color: rgba(0,0,0,.07);
+        display: inline-block;
+        width: 2px;
+      }
+    }
+  }
 
   nav.navbar {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
+    padding: 10px;
     background-color: transparent;
-    position: absolute;
+    position: fixed;
+    z-index: 9999999;
     top: 0;
     left: 0;
     width: 100%;
@@ -152,13 +178,96 @@ body {
   }
 
   .home {
-    padding-top: 50px;
     height: 100vh;
-    color: #000;
-    background-image: url("../img/Background.png");
+    background-image: url("../img/home-light.png");
     background-size: cover;
     background-position: center;
+    padding-top: 12%;
+    position: relative;
+
+    .info{
+      line-height: 1.5;
+
+      h2{
+        color: #222;
+        font-size: $mediumFont;
+        font-weight: 400;
+      }
+
+      .typed_wrap{
+        h1{
+          font-size: 71px !important;
+          color: #222;
+          margin-bottom: 30px;
+
+          span{
+            font-weight: bolder;
+            border-bottom: 4px solid blue;
+          }
+        }
+      }
+
+      p{
+        font-size: $normalFont;
+        color: $mainColor;
+      }
+      button{
+        @extend %our-btn;
+      }
+    }
   }
+
+  .mousehome{
+    position: absolute;
+    bottom: 3.725%;
+    background-color: gray;
+    width: 20px;
+    height: 40px;
+    left: 50%;
+    border-radius: 15px;
+
+  	.mouse-wheel{
+      margin: 10px auto;
+      background-color: white;
+      width: 3px;
+      height: 10px;
+      animation-name: mouse;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+
+  .bottom{
+    position: absolute;
+    bottom: 3.753%;
+    font-size: $normalFont;
+    width: 50%;
+
+    div{
+      display: inline-block;
+      a{
+        margin:0;
+        padding:0;
+        color: black;
+        text-decoration: none;
+      }
+
+      &:last-child{
+        width: 4%;
+        hr{
+          border: 0.5px solid #000;
+          margin: 0;
+          padding:0
+        }
+      }
+    }
+  }
+}
+
+
+
+.about-me{
+  height: 100vh;
 }
 @media (min-width: 768px) {
   .navbar-header {
@@ -174,9 +283,52 @@ body {
   }
 }
 
+@keyframes mouse{
+  from{
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  to{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
 .sticky {
-  position: fixed !important;
-  z-index: 1213123 !important;
-  top: 0 !important;
-  width: 100% !important;
+  position: fixed ;
+  z-index: 1213123 ;
+  top: 0;
+  width: 100%;
+}
+
+%our-btn{
+  margin-top: 20px;
+  border: none;
+  margin-right: 10px;
+  width: 10%;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px 0 rgba(0,0,0,.2);
+  padding: 10px;
+  outline: none;
+
+  &:first-child:hover{
+    background-color: #FFF !important;
+  }
+  &:last-child:hover{
+    background-color: #337ab7 !important;
+  }
+}
+.bgt {
+    background-color: #fff !important;
+    -webkit-animation: bgt 1s ease 0s 1 alternate !important;
+}
+.nots{
+  -webkit-animation: bgt 1s ease 0s 1 alternate !important;
+}
+@keyframes bgt {
+    from { background-color: transparent;}
+    to {background-color: #fff}
+}
+@keyframes nots {
+    from{background-color: #fff}
+    to { background-color: transparent;}
 }

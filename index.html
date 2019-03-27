@@ -26,8 +26,17 @@
 </head>
 
 <body>
+  <div class="background-lines">
+    <div class="container">
+      <span class="single-line"></span>
+      <span class="single-line"></span>
+      <span class="single-line"></span>
+      <span class="single-line"></span>
+      <span class="single-line"></span>
+    </div>
+  </div>
 
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -61,15 +70,33 @@
   <section class="home">
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div>
           <div class="info">
-            <p>Hello, my name is Daniel</p>
-            <h1 id="typed">I'm a <span ></span></h1>
-            <p>I'm a Web Developer with extensive experience for over 3 years. My expertise is to create and design Websites, Apps and more...</p>
+            <h2>Hello, my name is <strong>Daniel</strong></h2>
+            <div class="typed_wrap">
+              <h1>I'm a <span class="typed"></span></h1>
+            </div>
+            <p>I'm a Web Developer with extensive experience for over 3 years. My expertise is to <br> create and design Websites, Apps and more...</p>
+            <button class="btn btn-default">My Work</button>
+            <button class="btn btn-primary">Hire me</button>
+
           </div> <!-- End info -->
         </div><!-- End col -->
+
+        <div class="bottom text-left">
+          <div><a href='#aboutMe'>About me</a></div>
+          <div><hr></div>
+        </div>
+        <div class="mousehome">
+            <div class="mouse-wheel"></div>
+        </div>
+
       </div><!-- End row -->
     </div><!-- End container -->
+  </section>
+
+  <section id="aboutMe" class="about-me">
+
   </section>
   <!-- ================Scripts================ -->
 
@@ -80,7 +107,8 @@
   </script>
   <script src="js/wow.min.js"></script>
   <script src="js/plugin.js"></script>
-  <script src="js/demos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
 
 
 </body>
