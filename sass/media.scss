@@ -1,0 +1,89 @@
+@import "main";
+
+// Mopile Screen
+@media (max-width: 767px) {
+  .navbar-header {
+    float: none;
+
+    .navbar-toggle {
+      display: block;
+    }
+
+    a {
+      padding: 10px;
+    }
+  }
+
+  .nav{
+    ul li a{
+      font-size: $mediumFont !important;
+    }
+  }
+
+  .home {
+    .info {
+      margin-top: 30px;
+
+      h2 {
+        font-size: $upNormal !important;
+      }
+
+      .typed_wrap {
+        h1 {
+          font-size: $mediumFont !important;
+          margin-bottom: 10px;
+
+          span {
+            font-size: $upNormal;
+            border-bottom: 2px solid $themeColor;
+          }
+        }
+      }
+
+        p {
+          font-size: $normalFont;
+          word-spacing: 3px;
+        }
+
+        %our-btn{
+          width: 100%;
+        }
+
+      }
+    }
+
+    .bottom{
+      left: 15px;
+    }
+
+    .about-me{
+      .container .row {
+
+        .info{
+          margin: 0;
+        }
+      }
+
+    }
+  }
+
+// Tablet Screen
+@media (min-width: 768px) and (max-width: 1024px){
+  .home{
+    p{
+      max-width: 540px;
+    }
+  }
+  %our-btn{
+    width: 40%;
+  }
+  .about-me{
+    .container .row div {
+
+      img{
+        padding: 0;
+        margin: 0 86px 0 auto;
+      }
+    }
+  }
+}

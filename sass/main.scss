@@ -1,27 +1,32 @@
 $mainFont: "Gotham";
 $mainColor: #5a5a5a;
 $normalFont: 17px;
+$upNormal: 20px;
 $mediumFont: 24px;
+$bigFont: 44px;
+$hugefont: 71px;
 $mainFontWieght: 400;
 $mainFontSize: 60px;
+$themeColor: #17a2b8;
 
 body {
   font-family: $mainFont;
   font-weight: $mainFontWieght;
   position: relative;
 
-  .background-lines{
+  .background-lines {
     display: flex;
     height: 100%;
     position: absolute;
     z-index: -1;
     width: 100%;
 
-    .container{
+    .container {
+      width: 100%;
       display: flex;
       justify-content: space-between;
 
-      .single-line{
+      .single-line {
         background-color: rgba(0,0,0,.07);
         display: inline-block;
         width: 2px;
@@ -185,122 +190,111 @@ body {
     padding-top: 12%;
     position: relative;
 
-    .info{
+    .info {
       line-height: 1.5;
 
-      h2{
+      h2 {
         color: #222;
         font-size: $mediumFont;
         font-weight: 400;
       }
 
-      .typed_wrap{
-        h1{
-          font-size: 71px !important;
+      .typed_wrap {
+        h1 {
+          font-size: $hugefont;
           color: #222;
           margin-bottom: 30px;
 
-          span{
+          span {
             font-weight: bolder;
-            border-bottom: 4px solid blue;
+            border-bottom: 4px solid $themeColor;
           }
         }
       }
 
-      p{
+      p {
         font-size: $normalFont;
         color: $mainColor;
       }
-      button{
+
+      button {
         @extend %our-btn;
       }
     }
-  }
 
-  .mousehome{
-    position: absolute;
-    bottom: 3.725%;
-    background-color: gray;
-    width: 20px;
-    height: 40px;
-    left: 50%;
-    border-radius: 15px;
+    .mousehome {
+      position: absolute;
+      bottom: 3.725%;
+      background-color: gray;
+      width: 20px;
+      height: 40px;
+      left: 50%;
+      border-radius: 15px;
 
-  	.mouse-wheel{
-      margin: 10px auto;
-      background-color: white;
-      width: 3px;
-      height: 10px;
-      animation-name: mouse;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-    }
-  }
-
-  .bottom{
-    position: absolute;
-    bottom: 3.753%;
-    font-size: $normalFont;
-    width: 50%;
-
-    div{
-      display: inline-block;
-      a{
-        margin:0;
-        padding:0;
-        color: black;
-        text-decoration: none;
+      .mouse-wheel {
+        margin: 10px auto;
+        background-color: white;
+        width: 3px;
+        height: 10px;
+        animation-name: mouse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
       }
+    }
 
-      &:last-child{
-        width: 4%;
-        hr{
-          border: 0.5px solid #000;
+    .bottom {
+      position: absolute;
+      bottom: 3.753%;
+      font-size: $normalFont;
+      width: 50%;
+
+      div {
+        display: inline-block;
+
+        a {
           margin: 0;
-          padding:0
+          padding: 0;
+          color: black;
+          text-decoration: none;
+        }
+
+        &:last-child {
+          width: 4%;
+
+          hr {
+            border: 0.5px solid #000;
+            margin: 0;
+            padding: 0;
+          }
         }
       }
     }
   }
-}
 
+  .about-me {
+    height: 100vh;
+    padding-top: 12%;
 
+    .info{
+      margin: 0 0 0 90px;
+      line-height: 2;
 
-.about-me{
-  height: 100vh;
-}
-@media (min-width: 768px) {
-  .navbar-header {
-    float: none;
+      p.h1{
+        font-size: $bigFont;
+      }
 
-    .navbar-toggle {
-      display: block;
+      h3{
+        color: #17a2b8;
+        font-weight: normal;
+      }
     }
-
-    a {
-      padding: 10px;
-    }
   }
 }
 
-@keyframes mouse{
-  from{
-    opacity: 1;
-    transform: translateY(-10px);
-  }
-  to{
-    opacity: 0;
-    transform: translateY(20px);
-  }
-}
-.sticky {
-  position: fixed ;
-  z-index: 1213123 ;
-  top: 0;
-  width: 100%;
-}
+// meadias
 
-%our-btn{
+
+%our-btn {
   margin-top: 20px;
   border: none;
   margin-right: 10px;
@@ -310,25 +304,38 @@ body {
   padding: 10px;
   outline: none;
 
-  &:first-child:hover{
+  &:first-child:hover {
     background-color: #FFF !important;
   }
-  &:last-child:hover{
+
+  &:last-child:hover {
     background-color: #337ab7 !important;
   }
 }
+// js Classes
 .bgt {
-    background-color: #fff !important;
-    -webkit-animation: bgt 1s ease 0s 1 alternate !important;
-}
-.nots{
+  background-color: #fff !important;
   -webkit-animation: bgt 1s ease 0s 1 alternate !important;
 }
-@keyframes bgt {
-    from { background-color: transparent;}
-    to {background-color: #fff}
+
+// Animations
+@keyframes mouse {
+  from {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
-@keyframes nots {
-    from{background-color: #fff}
-    to { background-color: transparent;}
+@keyframes bgt {
+  from {
+    background-color: transparent;
+  }
+
+  to {
+    background-color: #fff;
+  }
 }
