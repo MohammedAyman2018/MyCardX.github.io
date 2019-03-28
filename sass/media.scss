@@ -1,6 +1,6 @@
 @import "main";
 
-// Mopile Screen
+// Mopile Screen == xs
 @media (max-width: 767px) {
   .navbar-header {
     float: none;
@@ -52,22 +52,31 @@
       }
     }
 
-    .bottom{
-      left: 15px;
-    }
-
-    .about-me{
-      .container .row {
-
-        .info{
-          margin: 0;
-        }
-      }
-
-    }
+  .bottom {
+    left: 15px;
   }
 
-// Tablet Screen
+  .about-me{
+    .container .row {
+
+      .info{
+        margin: 0;
+
+        p.h1{
+          font-size: $mediumFont
+        }
+
+        h3{
+          font-size: $normalFont;
+          font-weight: 500;
+        }
+      }
+    }
+
+  }
+}
+
+// Tablet Screen == sm
 @media (min-width: 768px) and (max-width: 1024px){
   .home{
     p{
@@ -84,6 +93,17 @@
         padding: 0;
         margin: 0 86px 0 auto;
       }
+    }
+  }
+}
+
+// Laptop Screen == md
+@media (min-width: 1024px){
+  .about-me {
+    margin-top: 30px;
+    img{
+      width: 430px;
+      height: 525px;
     }
   }
 }

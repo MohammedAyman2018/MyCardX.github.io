@@ -44,11 +44,14 @@ $(window).on('load', function() {
     cursorChar: "|"
   });
 
+  // ==================== Debug Me ============================= \\ 
   $('a[href="#aboutMe"]').on('click' , function(){
     $('html, body').animate({
       scrollTop: $('#aboutMe').offset().top
     }, 500);
   });
+
+  
 });
 
 new WOW().init();

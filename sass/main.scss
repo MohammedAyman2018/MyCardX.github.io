@@ -17,14 +17,14 @@ body {
   .background-lines {
     display: flex;
     height: 100%;
-    position: absolute;
-    z-index: -1;
     width: 100%;
+    position: fixed;
+    z-index: -1;
 
-    .container {
+    .container{
       width: 100%;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
 
       .single-line {
         background-color: rgba(0,0,0,.07);
@@ -33,7 +33,6 @@ body {
       }
     }
   }
-
   nav.navbar {
     margin-bottom: 0;
     border: none;
@@ -47,7 +46,10 @@ body {
     width: 100%;
 
     .navbar-header {
+        float: none;
       .navbar-toggle {
+        float: right;
+        display: block;
         border: none;
         direction: rtl;
 
@@ -181,7 +183,6 @@ body {
       }
     }
   }
-
   .home {
     height: 100vh;
     background-image: url("../img/home-light.png");
@@ -270,13 +271,11 @@ body {
       }
     }
   }
-
   .about-me {
-    height: 100vh;
-    padding-top: 12%;
+
 
     .info{
-      margin: 0 0 0 90px;
+      margin: 32px 0 0 22px;
       line-height: 2;
 
       p.h1{
@@ -287,12 +286,92 @@ body {
         color: #17a2b8;
         font-weight: normal;
       }
+
+      table{
+        margin-top: 30px;
+
+        th{
+          border-top: 0;
+          padding: 0;
+
+          label{
+            font-size: $normalFont;
+            font-weight: 500
+          }
+          span{
+            font-size: $normalFont;
+            font-weight: normal
+          }
+        }
+      }
+    }
+  }
+
+  .services{
+    @extend  %section;
+    background-color: rgba(247,247,247,0.7);
+
+    .title{
+
+      .h1{
+        font-size: $bigFont;
+        position: relative;
+        &:after{
+          background-color: $themeColor;
+          bottom: 0;
+          content: '';
+          display: block;
+          height: 50%;
+          position: absolute;
+          width: 85%;
+          z-index: -9;
+        }
+      }
+      
+      p{
+        font-size: $normalFont;
+      }
+    }
+
+    .skills{
+      .skill{
+        padding: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+        margin-top: 15px;
+        .img{
+          width: 30%;
+          display: inline-block;
+          color: $themeColor;
+          font-size: $hugefont;
+          vertical-align: top;
+        }
+
+        .skill-details{
+          display: inline-block;
+          width: 59%;
+          margin-left: 10px;
+          p{
+            padding: 0;
+            margin: 0;
+            line-height: 1.5;
+            vertical-align: center;
+            .h4{
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
     }
   }
 }
 
 // meadias
 
+%section {
+  height: 100vh;
+  padding-top: 12%;
+}
 
 %our-btn {
   margin-top: 20px;

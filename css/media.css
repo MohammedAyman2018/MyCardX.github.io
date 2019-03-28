@@ -5,13 +5,13 @@ body {
   body .background-lines {
     display: flex;
     height: 100%;
-    position: absolute;
-    z-index: -1;
-    width: 100%; }
+    width: 100%;
+    position: fixed;
+    z-index: -1; }
     body .background-lines .container {
       width: 100%;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-around; }
       body .background-lines .container .single-line {
         background-color: rgba(0, 0, 0, 0.07);
         display: inline-block;
@@ -27,19 +27,23 @@ body {
     top: 0;
     left: 0;
     width: 100%; }
-    body nav.navbar .navbar-header .navbar-toggle {
-      border: none;
-      direction: rtl; }
-      body nav.navbar .navbar-header .navbar-toggle:active, body nav.navbar .navbar-header .navbar-toggle:focus, body nav.navbar .navbar-header .navbar-toggle:hover {
-        background-color: transparent; }
-      body nav.navbar .navbar-header .navbar-toggle span {
-        background-color: #000 !important;
-        height: 3px;
-        width: 22px; }
-        body nav.navbar .navbar-header .navbar-toggle span:nth-child(3) {
-          width: 15px; }
-        body nav.navbar .navbar-header .navbar-toggle span:nth-child(4) {
-          width: 30px; }
+    body nav.navbar .navbar-header {
+      float: none; }
+      body nav.navbar .navbar-header .navbar-toggle {
+        float: right;
+        display: block;
+        border: none;
+        direction: rtl; }
+        body nav.navbar .navbar-header .navbar-toggle:active, body nav.navbar .navbar-header .navbar-toggle:focus, body nav.navbar .navbar-header .navbar-toggle:hover {
+          background-color: transparent; }
+        body nav.navbar .navbar-header .navbar-toggle span {
+          background-color: #000 !important;
+          height: 3px;
+          width: 22px; }
+          body nav.navbar .navbar-header .navbar-toggle span:nth-child(3) {
+            width: 15px; }
+          body nav.navbar .navbar-header .navbar-toggle span:nth-child(4) {
+            width: 30px; }
     body nav.navbar .nav {
       position: fixed;
       width: 100%;
@@ -174,17 +178,67 @@ body {
             border: 0.5px solid #000;
             margin: 0;
             padding: 0; }
-  body .about-me {
-    height: 100vh;
-    padding-top: 12%; }
-    body .about-me .info {
-      margin: 0 0 0 90px;
-      line-height: 2; }
-      body .about-me .info p.h1 {
-        font-size: 44px; }
-      body .about-me .info h3 {
+  body .about-me .info {
+    margin: 32px 0 0 22px;
+    line-height: 2; }
+    body .about-me .info p.h1 {
+      font-size: 44px; }
+    body .about-me .info h3 {
+      color: #17a2b8;
+      font-weight: normal; }
+    body .about-me .info table {
+      margin-top: 30px; }
+      body .about-me .info table th {
+        border-top: 0;
+        padding: 0; }
+        body .about-me .info table th label {
+          font-size: 17px;
+          font-weight: 500; }
+        body .about-me .info table th span {
+          font-size: 17px;
+          font-weight: normal; }
+  body .services {
+    background-color: rgba(247, 247, 247, 0.7); }
+    body .services .title .h1 {
+      font-size: 44px;
+      position: relative; }
+      body .services .title .h1:after {
+        background-color: #17a2b8;
+        bottom: 0;
+        content: '';
+        display: block;
+        height: 50%;
+        position: absolute;
+        width: 85%;
+        z-index: -9; }
+    body .services .title p {
+      font-size: 17px; }
+    body .services .skills .skill {
+      padding: 10px;
+      background-color: #fff;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+      margin-top: 15px; }
+      body .services .skills .skill .img {
+        width: 30%;
+        display: inline-block;
         color: #17a2b8;
-        font-weight: normal; }
+        font-size: 71px;
+        vertical-align: top; }
+      body .services .skills .skill .skill-details {
+        display: inline-block;
+        width: 59%;
+        margin-left: 10px; }
+        body .services .skills .skill .skill-details p {
+          padding: 0;
+          margin: 0;
+          line-height: 1.5;
+          vertical-align: center; }
+          body .services .skills .skill .skill-details p .h4 {
+            margin-bottom: 10px; }
+
+body .services {
+  height: 100vh;
+  padding-top: 12%; }
 
 body .home .info button {
   margin-top: 20px;
@@ -247,7 +301,12 @@ body .home .info button {
     left: 15px; }
 
   .about-me .container .row .info {
-    margin: 0; } }
+    margin: 0; }
+    .about-me .container .row .info p.h1 {
+      font-size: 24px; }
+    .about-me .container .row .info h3 {
+      font-size: 17px;
+      font-weight: 500; } }
 @media (min-width: 768px) and (max-width: 1024px) {
   .home p {
     max-width: 540px; }
@@ -258,5 +317,11 @@ body .home .info button {
   .about-me .container .row div img {
     padding: 0;
     margin: 0 86px 0 auto; } }
+@media (min-width: 1024px) {
+  .about-me {
+    margin-top: 30px; }
+    .about-me img {
+      width: 430px;
+      height: 525px; } }
 
 /*# sourceMappingURL=media.css.map */

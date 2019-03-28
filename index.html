@@ -7,11 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>CardX - Modern Personal Portofolio</title>
-  <link rel="icon" type="image/png" sizes="32x32" href="https://exill.tn/demo/cardx_html/template/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://exill.tn/demo/cardx_html/template/img/favicons/favicon-32x32.png">
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="css/animate.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link rel="stylesheet" href="css\media.css">
@@ -27,104 +30,220 @@
 </head>
 
 <body>
-  <div class="background-lines">
-    <div class="container">
-      <span class="single-line"></span>
-      <span class="single-line"></span>
-      <span class="single-line"></span>
-      <span class="single-line"></span>
-      <span class="single-line"></span>
-      <span class="single-line"></span>
-      <span class="single-line"></span>
-    </div>
-  </div>
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img src="img/img-logo-light.png" class="img-responsive" width="100px" alt="CardX" />
-        </a>
+
+  
+    <div class="background-lines hidden-xs hidden-sm">
+      <div class="container">
+        <span class="single-line"></span>
+        <span class="single-line"></span>
+        <span class="single-line"></span>
+        <span class="single-line"></span>
       </div>
+    </div>
 
-      <div class="nav toggle-overlay" id="nav">
-        <div class="outer-close ">
-          <a class="close navbar-toggle"><span></span></a>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="img/img-logo-light.png" class="img-responsive" width="100px" alt="CardX" />
+          </a>
         </div>
-        <ul class="list-unstyled">
-          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portofolio</a></li>
-          <li><a href="#">Clients</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container -->
-  </nav>
 
-  <section class="home">
-    <div class="container">
-      <div class="row">
+        <div class="nav toggle-overlay" id="nav">
+          <div class="outer-close ">
+            <a class="close navbar-toggle"><span></span></a>
+          </div>
+          <ul class="list-unstyled">
+            <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="#aboutMe">About</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#">Portofolio</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row">
           <div class="info">
             <div class="container">
-            <h2>Hello, my name is <strong>Daniel</strong></h2>
-            <div class="typed_wrap">
-              <h1>I'm a <span class="typed"></span></h1>
+              <h2>Hello, my name is <strong>Daniel</strong></h2>
+              <div class="typed_wrap">
+                <h1>I'm a <span class="typed"></span></h1>
+              </div>
+              <p>I'm a Web Developer with extensive experience for over 3 years. My expertise is to <br> create and design
+                Websites, Apps and more...</p>
+              <button class="btn btn-default">My Work</button>
+              <button class="btn btn-primary">Hire me</button>
+
+            </div> <!-- End info -->
+          </div><!-- End col -->
+
+          <div class="bottom text-left">
+            <div><a href='#aboutMe'>About me</a></div>
+            <div>
+              <hr>
             </div>
-            <p>I'm a Web Developer with extensive experience for over 3 years. My expertise is to <br> create and design Websites, Apps and more...</p>
-            <button class="btn btn-default">My Work</button>
-            <button class="btn btn-primary">Hire me</button>
-
-          </div> <!-- End info -->
-        </div><!-- End col -->
-
-        <div class="bottom text-left">
-          <div><a href='#aboutMe'>About me</a></div>
-          <div><hr></div>
-        </div>
-        <div class="mousehome">
+          </div>
+          <div class="mousehome">
             <div class="mouse-wheel"></div>
-        </div>
+          </div>
 
-      </div><!-- End row -->
-    </div><!-- End container -->
-  </section>
+        </div><!-- End row -->
+      </div><!-- End container -->
+    </section>
 
-  <section id="aboutMe" class="about-me">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 text-center">
-          <img src="img/about-img.jpg" class="img-responsive thumbnail" alt="me">
-        </div><!--End about me img-->
-        <div class="col-md-6">
-          <div class="info">
-            <p class='h1'>I’m Daniel Smith</p>
-            <h3>I am a Full-Stack Web Developer</h3>
-            <p>I am a freelancer based in the United Kingdom and i have been <br> building noteworthy websites
-               for years. For this time i've done <br> all types of projects.</p>
+    <section id="aboutMe" class="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 text-center">
+            <img src="img/about-img.jpg" class="img-responsive thumbnail" alt="me">
+          </div>
+          <!--End about me img-->
 
-            <p>I help convert a vision and an idea into meaningful and useful <br> products. Having a sharp eye for
-               product evolution helps me <br> prioritize tasks, iterate fast and deliver faster. If you're <br>interested in
-               working with me, don't hesitate to hire me.</p>
+          <div class="col-md-6">
+            <div class="info">
+              <p class='h1'>I’m Daniel Smith</p>
+              <h3>I am a Full-Stack Web Developer</h3>
+
+              <p>I am a freelancer based in the United Kingdom and i have been <br> building noteworthy websites
+                for years. For this time i've done <br> all types of projects.</p>
+
+              <p>I help convert a vision and an idea into meaningful and useful <br> products. Having a sharp eye for
+                product evolution helps me <br> prioritize tasks, iterate fast and deliver faster. If you're
+                <br>interested in
+                working with me, don't hesitate to hire me.</p>
+
+              <table class="table">
+                <tr>
+                  <th scope="col">
+                    <label for="Name">Name: </label>
+                    <span>Daniel Smith</span>
+                  </th>
+
+                  <th scope="col">
+                    <label for="Email">Email: </label>
+                    <span>daniel@example.com</span>
+                  </th>
+                </tr>
+
+                <tr>
+                  <th scope="col">
+                    <label for="Age">Age: </label>
+                    <span>19</span>
+                  </th>
+                  <th scope="col">
+                    <label for="From">From: </label>
+                    <span>Liverpool, United Kingdom</span>
+                  </th>
+                </tr>
+              </table>
+
+            </div>
           </div>
         </div>
-      </div><!--End row-->
-    </div><!--End container-->
-  </section>
+        <!--End row-->
+      </div>
+      <!--End container-->
+    </section>
+
+    <section id="Services" class="services">
+      <div class="container">
+        <div class="title">
+          <span class="h1">My Services</span>
+          <p>Services i offer to my clients</p>
+        </div>
+      
+        <div class="skills">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="skill">
+                <div class="img text-center">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-details text-left">
+                  <p class="h4">Design Trends</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                </div><!--End Skill-->
+            </div><!--End col-ms -->
+            <div class="col-md-4 col-sm-6">
+              <div class="skill">
+                <div class="img text-center">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-details text-left">
+                  <p class="h4">Design Trends</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                </div><!--End Skill-->
+            </div><!--End col-ms -->
+            <div class="col-md-4 col-sm-6">
+              <div class="skill">
+                <div class="img text-center">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-details text-left">
+                  <p class="h4">Design Trends</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                </div><!--End Skill-->
+            </div><!--End col-ms -->
+            <div class="col-md-4 col-sm-6">
+              <div class="skill">
+                <div class="img text-center">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-details text-left">
+                  <p class="h4">Design Trends</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                </div><!--End Skill-->
+            </div><!--End col-ms -->
+            <div class="col-md-4 col-sm-6">
+              <div class="skill">
+                <div class="img text-center">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-details text-left">
+                  <p class="h4">Design Trends</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                </div><!--End Skill-->
+            </div><!--End col-ms -->
+            <div class="col-md-4 col-sm-6">
+              <div class="skill">
+                <div class="img text-center">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="skill-details text-left">
+                  <p class="h4">Design Trends</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                </div><!--End Skill-->
+            </div><!--End col-ms -->
+          </div><!--End row-->
+        </div><!--End Skills-->
+      </div><!--End container-->
+    </section>
   <!-- ================Scripts================ -->
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
   <script src="js/wow.min.js"></script>
   <script src="js/plugin.js"></script>
