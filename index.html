@@ -15,9 +15,13 @@
   <!-- Font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link href="css/hoverEffect.css" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
+  <link href="css\media.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="css\media.css">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
   <!-- Bootstrap -->
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -31,225 +35,493 @@
 
 <body>
 
-
-  
-    <div class="background-lines hidden-xs hidden-sm">
-      <div class="container">
-        <span class="single-line"></span>
-        <span class="single-line"></span>
-        <span class="single-line"></span>
-        <span class="single-line"></span>
-      </div>
-    </div>
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">
-            <img src="img/img-logo-light.png" class="img-responsive" width="100px" alt="CardX" />
-          </a>
+  <div id="gallery" class="gallery">
+    <button class="btn btn-default close">x</button>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="owl-carousel owl-theme">
+            <img class="img-responsive item" src="img/item-1.jpg">
+            <img class="img-responsive item" src="img/item-2.jpg">
+            <img class="img-responsive item" src="img/item-3.jpg">
+            <img class="img-responsive item" src="img/item-4.jpg">
+            <img class="img-responsive item" src="img/item-5.jpg">
+            <img class="img-responsive item" src="img/item-6.jpg">
+          </div>
         </div>
 
-        <div class="nav toggle-overlay" id="nav">
-          <div class="outer-close ">
-            <a class="close navbar-toggle"><span></span></a>
-          </div>
-          <ul class="list-unstyled">
-            <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
-            <li><a href="#aboutMe">About</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#">Portofolio</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container -->
-    </nav>
+        <div class="col-md-7">
+          <div class="gallery_info">
 
-    <section id="home" class="home">
-      <div class="container">
-        <div class="row">
+            <h1 id="heading">I'm Header</h1>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda aut sapiente quo explicabo, quasi
+              incidunt aperiam laudantium, nemo cum eaque inventore ut voluptas voluptatibus nihil! Amet soluta, ea illo
+              sint?
+            </p>
+            <br>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dignissimos culpa deserunt aspernatur
+              ipsa veritatis alias labore tempore laboriosam commodi! Ab neque sunt, odiovoluptatibus, dignissimos nisi
+              consequuntur atque qui explicabo eligendi, harum in? Amet aspernatur atque quam. Illo natus tempora
+              explicabo deleniti molestias numquam debitis repudiandae, repellendus voluptatum soluta?
+            </p>
+            <br>
+            <table class="table">
+              <tr>
+                <th scope="col">
+                  <label for="Name">Client: </label>
+                  <span>Envato</span>
+                </th>
+
+                <th scope="col">
+                  <label for="Email">Categories: </label>
+                  <span>Branding, Web Design</span>
+                </th>
+              </tr>
+
+              <tr>
+                <th scope="col">
+                  <label for="Age">Date: </label>
+                  <span>12 May, 2019</span>
+                </th>
+                <th scope="col">
+                  <label for="From">Technologies: </label>
+                  <span>HTML5, SCSS, JS</span>
+                </th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- background-lines -->
+  <div class="background-lines hidden-xs hidden-sm">
+    <div class="container">
+      <span class="single-line"></span>
+      <span class="single-line"></span>
+      <span class="single-line"></span>
+      <span class="single-line"></span>
+    </div>
+  </div>
+  <!-- navbar -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home">
+          <img src="img/img-logo-light.png" class="img-responsive" width="100px" alt="CardX" />
+        </a>
+      </div>
+
+      <div class="nav toggle-overlay" id="nav">
+        <div class="outer-close ">
+          <a class="close navbar-toggle"><span></span></a>
+        </div>
+        <ul class="list-unstyled">
+          <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
+          <li><a href="#aboutMe">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#portofolio">Portofolio</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+  </nav>
+  <!-- home -->
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row">
+        <div class="info">
+          <div class="container">
+            <h2>Hello, my name is <strong>Daniel</strong></h2>
+            <div class="typed_wrap">
+              <h1>I'm a <span class="typed"></span></h1>
+            </div>
+            <p>I'm a Web Developer with extensive experience for over 3 years. My expertise is to <br> create and design
+              Websites, Apps and more...</p>
+            <button class="btn btn-default">My Work</button>
+            <button class="btn btn-primary">Hire me</button>
+
+          </div> <!-- End info -->
+        </div><!-- End col -->
+
+        <div class="bottom text-left">
+          <div><a href='#aboutMe'>About me</a></div>
+          <div>
+            <hr>
+          </div>
+        </div>
+        <div class="mousehome">
+          <div class="mouse-wheel"></div>
+        </div>
+
+      </div><!-- End row -->
+    </div><!-- End container -->
+  </section>
+  <!-- aboutMe -->
+  <section id="aboutMe" class="about-me">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 text-center">
+          <img src="img/about-img.jpg" class="img-responsive thumbnail" alt="me">
+        </div>
+        <!--End about me img-->
+
+        <div class="col-md-6">
           <div class="info">
-            <div class="container">
-              <h2>Hello, my name is <strong>Daniel</strong></h2>
-              <div class="typed_wrap">
-                <h1>I'm a <span class="typed"></span></h1>
-              </div>
-              <p>I'm a Web Developer with extensive experience for over 3 years. My expertise is to <br> create and design
-                Websites, Apps and more...</p>
-              <button class="btn btn-default">My Work</button>
-              <button class="btn btn-primary">Hire me</button>
+            <p class='h1'>I’m Daniel Smith</p>
+            <h3>I am a Full-Stack Web Developer</h3>
 
-            </div> <!-- End info -->
-          </div><!-- End col -->
+            <p>I am a freelancer based in the United Kingdom and i have been <br> building noteworthy websites
+              for years. For this time i've done <br> all types of projects.</p>
 
-          <div class="bottom text-left">
-            <div><a href='#aboutMe'>About me</a></div>
-            <div>
-              <hr>
-            </div>
+            <p>I help convert a vision and an idea into meaningful and useful <br> products. Having a sharp eye for
+              product evolution helps me <br> prioritize tasks, iterate fast and deliver faster. If you're
+              <br>interested in
+              working with me, don't hesitate to hire me.</p>
+
+            <table class="table">
+              <tr>
+                <th scope="col">
+                  <label for="Name">Name: </label>
+                  <span>Daniel Smith</span>
+                </th>
+
+                <th scope="col">
+                  <label for="Email">Email: </label>
+                  <span>daniel@example.com</span>
+                </th>
+              </tr>
+
+              <tr>
+                <th scope="col">
+                  <label for="Age">Age: </label>
+                  <span>19</span>
+                </th>
+                <th scope="col">
+                  <label for="From">From: </label>
+                  <span>Liverpool, United Kingdom</span>
+                </th>
+              </tr>
+            </table>
+
           </div>
-          <div class="mousehome">
-            <div class="mouse-wheel"></div>
-          </div>
+        </div>
+      </div>
+      <!--End row-->
+    </div>
+    <!--End container-->
+  </section>
+  <!-- Services -->
+  <section id="Services" class="services">
+    <div class="container">
+      <div class="title">
+        <span class="h1">My Services</span>
+        <p>Services i offer to my clients</p>
+      </div>
 
-        </div><!-- End row -->
-      </div><!-- End container -->
-    </section>
-
-    <section id="aboutMe" class="about-me">
-      <div class="container">
+      <div class="skills">
         <div class="row">
-          <div class="col-lg-6 col-md-6 text-center">
-            <img src="img/about-img.jpg" class="img-responsive thumbnail" alt="me">
-          </div>
-          <!--End about me img-->
-
-          <div class="col-md-6">
-            <div class="info">
-              <p class='h1'>I’m Daniel Smith</p>
-              <h3>I am a Full-Stack Web Developer</h3>
-
-              <p>I am a freelancer based in the United Kingdom and i have been <br> building noteworthy websites
-                for years. For this time i've done <br> all types of projects.</p>
-
-              <p>I help convert a vision and an idea into meaningful and useful <br> products. Having a sharp eye for
-                product evolution helps me <br> prioritize tasks, iterate fast and deliver faster. If you're
-                <br>interested in
-                working with me, don't hesitate to hire me.</p>
-
-              <table class="table">
-                <tr>
-                  <th scope="col">
-                    <label for="Name">Name: </label>
-                    <span>Daniel Smith</span>
-                  </th>
-
-                  <th scope="col">
-                    <label for="Email">Email: </label>
-                    <span>daniel@example.com</span>
-                  </th>
-                </tr>
-
-                <tr>
-                  <th scope="col">
-                    <label for="Age">Age: </label>
-                    <span>19</span>
-                  </th>
-                  <th scope="col">
-                    <label for="From">From: </label>
-                    <span>Liverpool, United Kingdom</span>
-                  </th>
-                </tr>
-              </table>
-
+          <div class="col-md-4 col-sm-6">
+            <div class="skill">
+              <div class="img text-center">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <div class="skill-details text-left">
+                <p class="h4">Design Trends</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
             </div>
+            <!--End Skill-->
           </div>
+          <!--End col-ms -->
+          <div class="col-md-4 col-sm-6">
+            <div class="skill">
+              <div class="img text-center">
+                <i class="far fa-images"></i>
+              </div>
+              <div class="skill-details text-left">
+                <p class="h4">PSD Design</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <!--End Skill-->
+          </div>
+          <!--End col-ms -->
+          <div class="col-md-4 col-sm-6">
+            <div class="skill">
+              <div class="img text-center">
+                <i class="fab fa-vuejs"></i>
+              </div>
+              <div class="skill-details text-left">
+                <p class="h4">Customer Support</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <!--End Skill-->
+          </div>
+          <!--End col-ms -->
+          <div class="col-md-4 col-sm-6">
+            <div class="skill">
+              <div class="img text-center">
+                <i class="fab fa-wordpress-simple"></i>
+              </div>
+              <div class="skill-details text-left">
+                <p class="h4">Web Development</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <!--End Skill-->
+          </div>
+          <!--End col-ms -->
+          <div class="col-md-4 col-sm-6">
+            <div class="skill">
+              <div class="img text-center">
+                <i class="fas fa-arrows-alt"></i>
+              </div>
+              <div class="skill-details text-left">
+                <p class="h4">Fully Responsive</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <!--End Skill-->
+          </div>
+          <!--End col-ms -->
+          <div class="col-md-4 col-sm-6">
+            <div class="skill">
+              <div class="img text-center">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <div class="skill-details text-left">
+                <p class="h4">Branding</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </div>
+            <!--End Skill-->
+          </div>
+          <!--End col-ms -->
         </div>
         <!--End row-->
       </div>
-      <!--End container-->
-    </section>
+      <!--End Skills-->
+    </div>
+    <!--End container-->
+  </section>
+  <!-- portofolio -->
+  <section id="portofolio" class="portofolio">
+    <div class="container">
+      <div class="title">
+        <span class="h1">Portfolio</span>
+        <p>Showcasing some of my best work</p>
+      </div>
 
-    <section id="Services" class="services">
-      <div class="container">
-        <div class="title">
-          <span class="h1">My Services</span>
-          <p>Services i offer to my clients</p>
+      <!-- Owl Carousel -->
+      <div id="portofolio-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#portofolio-carousel" data-slide-to="0" class="active">All</li>
+          <li data-target="#portofolio-carousel" data-slide-to="1">Brand</li>
+          <li data-target="#portofolio-carousel" data-slide-to="2">Design</li>
+          <li data-target="#portofolio-carousel" data-slide-to="3">Photos</li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          
+          <div class="item active">
+            <div class="row">
+              <div class="col-md-4 col-sm-6">
+                <div data-label="1" class="hovereffect">
+                  <img class="img-responsive" src="img/item-1.jpg">
+                  <div data-label="1" class="overlay open-gallery">
+                    <h2 data-label="1">Label Tag MockUp</h2>
+                    <p>
+                      <a class="open-gallry" data-label='1'>More Info</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div data-label="2" class="hovereffect">
+                  <img class="img-responsive" src="img/item-2.jpg">
+                  <div data-label="2" class="overlay open-gallery">
+                    <h2 data-label="2">3D Bag Mockup</h2>
+                    <p>
+                      <a class="open-gallry" data-label='2'>More Info</a>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div data-label="3" class="hovereffect">
+                  <img class="img-responsive" src="img/item-3.jpg">
+                  <div data-label="3" class="overlay open-gallery">
+                    <h2 data-label="3">Modern Bag Design</h2>
+                    <p>
+                      <a class="open-gallry" data-label='3'>More Info</a>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div data-label="4" class="hovereffect">
+                  <img class="img-responsive" src="img/item-4.jpg">
+                  <div data-label="4" class="overlay open-gallery">
+                    <h2 data-label="4">Coffee Cup Design</h2>
+                    <p>
+                      <a class="open-gallry" data-label='4'>More Info</a>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div data-label="5" class="hovereffect">
+                  <img class="img-responsive" src="img/item-5.jpg">
+                  <div data-label="5" class="overlay open-gallery">
+                    <h2 data-label="5">T-Shirt Design</h2>
+                    <p>
+                      <a class="open-gallry" data-label='5'>More Info</a>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-md-4 col-sm-6">
+                <div data-label="6" class="hovereffect">
+                  <img class="img-responsive" src="img/item-6.jpg">
+                  <div data-label="6" class="overlay open-gallery">
+                    <h2 data-label="6">Packaging Box Mockup</h2>
+                    <p>
+                      <a class="open-gallry" data-label='6'>More Info</a>
+                    </p>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="col-md-4 col-sm-6">
+              <div data-label="4" class="hovereffect">
+                <img class="img-responsive" src="img/item-4.jpg">
+                <div data-label="4" class="overlay open-gallery">
+                  <h2 data-label="4">Coffee Cup Design</h2>
+                  <p>
+                    <a class="open-gallry" data-label='4'>More Info</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div data-label="5" class="hovereffect">
+                <img class="img-responsive" src="img/item-5.jpg">
+                <div data-label="5" class="overlay open-gallery">
+                  <h2 data-label="5">T-Shirt Design</h2>
+                  <p>
+                    <a class="open-gallry" data-label='5'>More Info</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="item">
+
+            <div class="col-md-4 col-sm-6">
+              <div data-label="1" class="hovereffect">
+                <img class="img-responsive" src="img/item-1.jpg">
+                <div data-label="1" class="overlay open-gallery">
+                  <h2 data-label="1">Label Tag MockUp</h2>
+                  <p>
+                    <a class="open-gallry" data-label='1'>More Info</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div data-label="4" class="hovereffect">
+                <img class="img-responsive" src="img/item-4.jpg">
+                <div data-label="4" class="overlay open-gallery">
+                  <h2 data-label="4">Coffee Cup Design</h2>
+                  <p>
+                    <a class="open-gallry" data-label='4'>More Info</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="col-md-4 col-sm-6">
+              <div data-label="2" class="hovereffect">
+                <img class="img-responsive" src="img/item-2.jpg">
+                <div data-label="2" class="overlay open-gallery">
+                  <h2 data-label="2">3D Bag Mockup</h2>
+                  <p>
+                    <a class="open-gallry" data-label='2'>More Info</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+              <div data-label="6" class="hovereffect">
+                <img class="img-responsive" src="img/item-6.jpg">
+                <div data-label="6" class="overlay open-gallery">
+                  <h2 data-label="6">Packaging Box Mockup</h2>
+                  <p>
+                    <a class="open-gallry" data-label='6'>More Info</a>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
         </div>
-      
-        <div class="skills">
-          <div class="row">
-            <div class="col-md-4 col-sm-6">
-              <div class="skill">
-                <div class="img text-center">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="skill-details text-left">
-                  <p class="h4">Design Trends</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                </div><!--End Skill-->
-            </div><!--End col-ms -->
-            <div class="col-md-4 col-sm-6">
-              <div class="skill">
-                <div class="img text-center">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="skill-details text-left">
-                  <p class="h4">Design Trends</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                </div><!--End Skill-->
-            </div><!--End col-ms -->
-            <div class="col-md-4 col-sm-6">
-              <div class="skill">
-                <div class="img text-center">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="skill-details text-left">
-                  <p class="h4">Design Trends</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                </div><!--End Skill-->
-            </div><!--End col-ms -->
-            <div class="col-md-4 col-sm-6">
-              <div class="skill">
-                <div class="img text-center">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="skill-details text-left">
-                  <p class="h4">Design Trends</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                </div><!--End Skill-->
-            </div><!--End col-ms -->
-            <div class="col-md-4 col-sm-6">
-              <div class="skill">
-                <div class="img text-center">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="skill-details text-left">
-                  <p class="h4">Design Trends</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                </div><!--End Skill-->
-            </div><!--End col-ms -->
-            <div class="col-md-4 col-sm-6">
-              <div class="skill">
-                <div class="img text-center">
-                    <i class="fab fa-css3-alt"></i>
-                </div>
-                <div class="skill-details text-left">
-                  <p class="h4">Design Trends</p>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-                </div><!--End Skill-->
-            </div><!--End col-ms -->
-          </div><!--End row-->
-        </div><!--End Skills-->
-      </div><!--End container-->
-    </section>
-  <!-- ================Scripts================ -->
-
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- ================ Scripts =============== -->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
     integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
   </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/plugin.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
-
+  <script src="js/owl.carousel.min.js"></script>
 
 </body>
 
