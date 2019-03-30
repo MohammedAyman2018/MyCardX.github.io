@@ -1,7 +1,8 @@
 body {
   font-family: "Gotham";
   font-weight: 400;
-  position: relative; }
+  position: relative;
+  height: 5000px; }
   body::-webkit-scrollbar {
     width: 10px; }
   body::-webkit-scrollbar-track {
@@ -15,7 +16,6 @@ body {
     background-color: #fff;
     position: fixed;
     width: 100%;
-    overflow: hidden;
     height: 100%;
     display: none;
     z-index: 99999999999999999999999;
@@ -183,7 +183,7 @@ body {
           border-bottom: 4px solid #17a2b8; }
       body .home .info p {
         font-size: 17px;
-        color: #5a5a5a; }
+        color: #555; }
     body .home .mousehome {
       position: absolute;
       bottom: 3.725%;
@@ -289,11 +289,64 @@ body {
     margin-top: 30px; }
     body .portofolio .carousel .carousel-inner .hovereffect a {
       color: #17a2b8; }
+  body .banner {
+    margin-top: 30px;
+    padding: 80px 0;
+    background-image: url("../img/hire.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed; }
+    body .banner .flex {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .banner .flex button {
+        width: 50%; }
+  body .resume {
+    background-color: rgba(247, 247, 247, 0.7); }
+    body .resume .col-md-4 {
+      padding-left: 0;
+      padding-right: 0; }
+      body .resume .col-md-4 .time {
+        margin-top: 30px; }
+        body .resume .col-md-4 .time span.h5:first-of-type {
+          color: #17a2b8; }
+        body .resume .col-md-4 .time span.h5:last-of-type::before {
+          content: " /"; }
+        body .resume .col-md-4 .time .line {
+          position: relative; }
+          body .resume .col-md-4 .time .line hr {
+            height: 6px;
+            background-color: #17a2b8; }
+            body .resume .col-md-4 .time .line hr:before {
+              content: '';
+              position: absolute;
+              width: 15px;
+              height: 15px;
+              background-color: #555; }
+            body .resume .col-md-4 .time .line hr:after {
+              content: '';
+              position: absolute;
+              bottom: -24px;
+              left: -3px;
+              display: block;
+              width: 7px;
+              height: 15px;
+              border-left: 10px solid transparent;
+              border-right: 10px solid transparent;
+              border-top: 10px solid #555; }
+        body .resume .col-md-4 .time_info {
+          margin-top: 30px;
+          padding-right: 10px;
+          color: #555; }
+          body .resume .col-md-4 .time_info p:first-child {
+            font-weight: 500;
+            font-size: 20px; }
 
-body .services .title .h1, body .portofolio .title .h1 {
+body .services .title .h1, body .portofolio .title .h1, body .resume .title .h1 {
   font-size: 44px;
   position: relative; }
-  body .services .title .h1:after, body .portofolio .title .h1:after {
+  body .services .title .h1:after, body .portofolio .title .h1:after, body .resume .title .h1:after {
     background-color: #17a2b8;
     bottom: 0;
     content: '';
@@ -302,25 +355,25 @@ body .services .title .h1, body .portofolio .title .h1 {
     position: absolute;
     width: 85%;
     z-index: -9; }
-body .services .title p, body .portofolio .title p {
+body .services .title p, body .portofolio .title p, body .resume .title p {
   font-size: 17px; }
 
-body .services, body .portofolio {
-  height: 100vh;
+body .about-me, body .services, body .portofolio, body .resume {
+  min-height: 100vh;
   padding-top: 12%; }
 
-body .home .info button {
+body .home .info button, body .banner .flex button {
   margin-top: 20px;
   border: none;
   margin-right: 10px;
-  width: 10%;
+  min-width: 10%;
   border-radius: 30px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
   outline: none; }
-  body .home .info button:first-child:hover {
+  body .home .info button:first-child:hover, body .banner .flex button:first-child:hover {
     background-color: #FFF !important; }
-  body .home .info button:last-child:hover {
+  body .home .info button:last-child:hover, body .banner .flex button:last-child:hover {
     background-color: #337ab7 !important; }
 
 .bgt {
@@ -341,37 +394,13 @@ body .home .info button {
     background-color: #fff; } }
 @media (max-width: 767px) {
   .gallery {
-    padding-top: 10vh;
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    display: none;
-    z-index: 99999999999999999999999;
-    top: 0;
-    left: 0; }
+    overflow: scroll; }
     .gallery button.close {
-      color: #000;
-      position: absolute;
-      right: 40px;
-      opacity: 1; }
-      .gallery button.close:hover, .gallery button.close:active, .gallery button.close:focus {
-        background-color: transparent; }
-    .gallery_info {
-      color: gray;
-      line-height: 2; }
-      .gallery_info h1 {
-        color: #222;
-        font-size: 44px; }
-      .gallery_info table tr th {
-        border-top: 0; }
-        .gallery_info table tr th label {
-          font-weight: 400;
-          margin-right: 10px;
-          color: #555; }
-        .gallery_info table tr th span {
-          font-weight: normal; }
+      top: 2vh;
+      right: 140px; }
+    .gallery_info table tr th {
+      border-top: 0;
+      display: block; }
 
   .navbar-header {
     float: none; }
@@ -396,8 +425,8 @@ body .home .info button {
     .home .info p {
       font-size: 17px;
       word-spacing: 3px; }
-    body .home .info button {
-      width: 100%; }
+    body .home .info button, .home .info body .banner .flex button {
+      width: 100% !important; }
 
   .bottom {
     left: 15px; }
@@ -408,12 +437,33 @@ body .home .info button {
       font-size: 24px; }
     .about-me .container .row .info h3 {
       font-size: 17px;
-      font-weight: 500; } }
+      font-weight: 500; }
+    .about-me .container .row .info table tr th {
+      display: block;
+      margin-top: 10px; }
+
+  .flex button {
+    width: 100% !important; }
+
+  .resume .col-md-4 {
+    margin-left: 15px;
+    margin-right: 15px; }
+
+  body .about-me, body .services, body .portofolio, body .resume {
+    margin-top: 30px; } }
 @media (min-width: 768px) and (max-width: 1024px) {
+  .gallery {
+    overflow: scroll; }
+    .gallery button.close {
+      top: 2vh;
+      right: 140px; }
+    .gallery_info table tr th {
+      border-top: 0; }
+
   .home p {
     max-width: 540px; }
 
-  body .home .info button {
+  body .home .info button, body .banner .flex button {
     width: 40%; }
 
   .about-me .container .row div img {

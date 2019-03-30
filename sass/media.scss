@@ -3,49 +3,15 @@
 // Mopile Screen == xs
 @media (max-width: 767px) {
   .gallery{
-    padding-top: 10vh;
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    display: none;
-    z-index: 99999999999999999999999;
-    top: 0;
-    left: 0;
-
-    
+    overflow: scroll;
     button.close{
-      color: #000;
-      position: absolute;
-      right: 40px;
-      opacity: 1;
-
-      &:hover,
-      &:active,
-      &:focus{
-        background-color: transparent;
-      }
+      top: 2vh;
+      right: 140px; 
     }
     &_info{
-      h1{
-        color: #222;
-        font-size: $bigFont
-      }
-      color: gray;
-      line-height: 2;
       table tr th{
         border-top: 0;
-
-        label{
-          font-weight: 400;
-          margin-right: 10px;
-          color: #555;
-        }
-
-        span{
-          font-weight: normal;
-        }
+        display:block;
       }
     }
   }
@@ -94,7 +60,7 @@
         }
 
         %our-btn{
-          width: 100%;
+          width: 100% !important;
         }
 
       }
@@ -105,6 +71,7 @@
   }
 
   .about-me{
+
     .container .row {
 
       .info{
@@ -118,14 +85,48 @@
           font-size: $normalFont;
           font-weight: 500;
         }
+
+        table tr th{
+          display: block;
+          margin-top: 10px;
+        }
       }
     }
 
+  }
+
+  .flex{
+    
+    button{
+      width: 100% !important;
+    }
+  }
+
+  .resume{
+    .col-md-4{
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+  %section{
+    margin-top: 30px;
   }
 }
 
 // Tablet Screen == sm
 @media (min-width: 768px) and (max-width: 1024px){
+  .gallery{
+    overflow: scroll;
+    button.close{
+      top: 2vh;
+      right: 140px; 
+    }
+    &_info{
+      table tr th{
+        border-top: 0;
+      }
+    }
+  }
   .home{
     p{
       max-width: 540px;
@@ -136,7 +137,6 @@
   }
   .about-me{
     .container .row div {
-
       img{
         padding: 0;
         margin: 0 86px 0 auto;
