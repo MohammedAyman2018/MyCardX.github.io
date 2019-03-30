@@ -300,7 +300,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center; }
-      body .banner .flex button {
+      body .banner .flex a {
         width: 50%; }
   body .resume {
     background-color: rgba(247, 247, 247, 0.7); }
@@ -342,11 +342,130 @@ body {
           body .resume .col-md-4 .time_info p:first-child {
             font-weight: 500;
             font-size: 20px; }
+  body .clients .title {
+    text-align: center; }
+    body .clients .title .h1 {
+      font-weight: bold; }
+      body .clients .title .h1:after {
+        left: 0;
+        width: 100% !important; }
+    body .clients .title p {
+      padding: 10px;
+      font-size: 14px !important; }
+  body .clients .owl-carousel {
+    margin-top: 30px; }
+    body .clients .owl-carousel .item {
+      color: #555;
+      font-size: 17px;
+      text-align: center;
+      overflow: hidden;
+      min-height: 290px; }
+      body .clients .owl-carousel .item .quote {
+        margin-top: 30px;
+        font-size: 71px;
+        color: #17a2b8; }
+      body .clients .owl-carousel .item .author {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-bottom: 10px; }
+        body .clients .owl-carousel .item .author-img {
+          max-width: 50px;
+          margin: 0;
+          padding: 0;
+          border: 2px solid #17a2b8;
+          border-radius: 50%; }
+        body .clients .owl-carousel .item .author-name {
+          text-align: left;
+          margin-left: 10px;
+          font-size: 14px;
+          padding: 0; }
+          body .clients .owl-carousel .item .author-name h6 {
+            margin: 0;
+            font-size: 17px; }
+      body .clients .owl-carousel .item .testimonial {
+        padding: 30px 0 10px; }
+      body .clients .owl-carousel .item .carousel .overview {
+        font-style: italic; }
+        body .clients .owl-carousel .item .carousel .overview b {
+          text-transform: uppercase;
+          color: #7AA641; }
+      body .clients .owl-carousel .item .carousel-indicators {
+        bottom: -40px; }
+        body .clients .owl-carousel .item .carousel-indicators li {
+          background: #999;
+          border-color: transparent;
+          box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2); }
+          body .clients .owl-carousel .item .carousel-indicators li,
+          body .clients .owl-carousel .item .carousel-indicators li li.active {
+            width: 10px;
+            height: 10px;
+            margin: 1px 3px;
+            border-radius: 50%; }
+          body .clients .owl-carousel .item .carousel-indicators li .active {
+            background: #555;
+            box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2); }
+  body .blog .posts {
+    margin-top: 40px; }
+    body .blog .posts .post {
+      overflow: hidden;
+      border-radius: 5px; }
+      body .blog .posts .post-img {
+        position: relative; }
+        body .blog .posts .post-img .date {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 5px 15px;
+          font-size: 14px;
+          background-color: #17a2b8;
+          color: white; }
+          body .blog .posts .post-img .date p {
+            padding: 0;
+            margin: 0; }
+      body .blog .posts .post-info {
+        font-size: 13px; }
+        body .blog .posts .post-info .h5 {
+          font-size: 17px; }
+        body .blog .posts .post-info p:last-of-type span {
+          color: #17a2b8; }
+  body .contact label {
+    font-size: 20px;
+    margin: 28px 0; }
+  body .contact .form input, body .contact .form textarea {
+    color: #555;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all 0.4s ease; }
+    body .contact .form input:focus, body .contact .form textarea:focus {
+      border-bottom: 1px solid #17a2b8; }
+  body .contact .form textarea {
+    resize: none; }
+  body .contact-info ul li .contact--details {
+    display: inline-block;
+    border-left: 1px solid #bbb;
+    padding-left: 20px;
+    margin-left: 25px; }
+    body .contact-info ul li .contact--details span {
+      color: #17a2b8; }
+  body .contact-info ul li span i {
+    max-width: 20px;
+    color: #17a2b8;
+    font-size: 34px; }
 
-body .services .title .h1, body .portofolio .title .h1, body .resume .title .h1 {
-  font-size: 44px;
-  position: relative; }
-  body .services .title .h1:after, body .portofolio .title .h1:after, body .resume .title .h1:after {
+body .services .title .h1, body .portofolio .title .h1, body .resume .title .h1, body .clients .title .h1, body .blog .title .h1, body .contact .title .h1 {
+  display: inline-block;
+  font-size: 40px;
+  color: #000;
+  font-weight: 800;
+  letter-spacing: -.25px;
+  position: relative;
+  margin-bottom: 10px; }
+  body .services .title .h1:after, body .portofolio .title .h1:after, body .resume .title .h1:after, body .clients .title .h1:after, body .blog .title .h1:after, body .contact .title .h1:after {
     background-color: #17a2b8;
     bottom: 0;
     content: '';
@@ -355,25 +474,25 @@ body .services .title .h1, body .portofolio .title .h1, body .resume .title .h1 
     position: absolute;
     width: 85%;
     z-index: -9; }
-body .services .title p, body .portofolio .title p, body .resume .title p {
-  font-size: 17px; }
+body .services .title p, body .portofolio .title p, body .resume .title p, body .clients .title p, body .blog .title p, body .contact .title p {
+  font-size: 15px; }
 
-body .about-me, body .services, body .portofolio, body .resume {
+body .about-me, body .services, body .portofolio, body .resume, body .clients, body .contact {
   min-height: 100vh;
   padding-top: 12%; }
 
-body .home .info button, body .banner .flex button {
+body .home .info button, body .banner .flex a, body .contact .form button {
   margin-top: 20px;
   border: none;
   margin-right: 10px;
-  min-width: 10%;
+  min-width: 20%;
   border-radius: 30px;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
   padding: 10px;
   outline: none; }
-  body .home .info button:first-child:hover, body .banner .flex button:first-child:hover {
+  body .home .info button:first-child:hover, body .banner .flex a:first-child:hover, body .contact .form button:first-child:hover {
     background-color: #FFF !important; }
-  body .home .info button:last-child:hover, body .banner .flex button:last-child:hover {
+  body .home .info button:last-child:hover, body .banner .flex a:last-child:hover, body .contact .form button:last-child:hover {
     background-color: #337ab7 !important; }
 
 .bgt {
@@ -425,7 +544,7 @@ body .home .info button, body .banner .flex button {
     .home .info p {
       font-size: 17px;
       word-spacing: 3px; }
-    body .home .info button, .home .info body .banner .flex button {
+    body .home .info button, .home .info body .banner .flex a, body .banner .flex .home .info a, .home .info body .contact .form button {
       width: 100% !important; }
 
   .bottom {
@@ -442,15 +561,19 @@ body .home .info button, body .banner .flex button {
       display: block;
       margin-top: 10px; }
 
-  .flex button {
-    width: 100% !important; }
+  .flex {
+    justify-content: left !important;
+    align-items: left !important; }
+    .flex a {
+      width: 100% !important; }
 
   .resume .col-md-4 {
     margin-left: 15px;
     margin-right: 15px; }
 
-  body .about-me, body .services, body .portofolio, body .resume {
-    margin-top: 30px; } }
+  body .about-me, body .services, body .portofolio, body .resume, body .clients, body .contact {
+    margin-top: 30px;
+    padding-top: 60px !important; } }
 @media (min-width: 768px) and (max-width: 1024px) {
   .gallery {
     overflow: scroll; }
@@ -463,18 +586,25 @@ body .home .info button, body .banner .flex button {
   .home p {
     max-width: 540px; }
 
-  body .home .info button, body .banner .flex button {
+  body .home .info button, body .banner .flex a, body .contact .form button {
     width: 40%; }
 
   .about-me .container .row div img {
     padding: 0;
-    margin: 0 86px 0 auto; } }
+    margin: 0 86px 0 auto; }
+
+  .flex {
+    justify-content: left !important;
+    align-items: left !important; } }
 @media (min-width: 1024px) {
   .about-me {
     padding-top: 130px;
     margin-top: 30px !important; }
     .about-me img {
       width: 430px;
-      height: 525px; } }
+      height: 525px; }
+
+  body .about-me, body .services, body .portofolio, body .resume, body .clients, body .contact {
+    padding-top: 100px !important; } }
 
 /*# sourceMappingURL=media.css.map */

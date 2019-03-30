@@ -1,6 +1,7 @@
 $mainFont: "Gotham";
 $mainColor: #555;
-$smoothGray: rgba(247,247,247,0.7);
+$smoothGray: rgba(247, 247, 247, 0.7);
+$smallFont: 15px;
 $normalFont: 17px;
 $upNormal: 20px;
 $mediumFont: 24px;
@@ -18,19 +19,19 @@ body {
 
   &::-webkit-scrollbar {
     width: 10px;
-    }
+  }
 
-    &::-webkit-scrollbar-track {
+  &::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px transparent;
-    }
+  }
 
-    &::-webkit-scrollbar-thumb {
+  &::-webkit-scrollbar-thumb {
     background-color: #222;
     border-radius: 40px;
     outline: none;
-    }
+  }
 
-  .gallery{
+  .gallery {
     padding-top: 10vh;
     background-color: #fff;
     position: fixed;
@@ -41,8 +42,8 @@ body {
     top: 0;
     left: 0;
 
-    
-    button.close{
+
+    button.close {
       color: #000;
       position: absolute;
       right: 40px;
@@ -50,27 +51,30 @@ body {
 
       &:hover,
       &:active,
-      &:focus{
+      &:focus {
         background-color: transparent;
       }
     }
-    &_info{
-      h1{
+
+    &_info {
+      h1 {
         color: #222;
         font-size: $bigFont
       }
+
       color: gray;
       line-height: 2;
-      table tr th{
+
+      table tr th {
         border-top: 0;
 
-        label{
+        label {
           font-weight: 400;
           margin-right: 10px;
           color: #555;
         }
 
-        span{
+        span {
           font-weight: normal;
         }
       }
@@ -84,18 +88,19 @@ body {
     position: fixed;
     z-index: -1;
 
-    .container{
+    .container {
       width: 100%;
       display: flex;
       justify-content: space-around;
 
       .single-line {
-        background-color: rgba(0,0,0,.07);
+        background-color: rgba(0, 0, 0, .07);
         display: inline-block;
         width: 2px;
       }
     }
   }
+
   nav.navbar {
     margin-bottom: 0;
     border: none;
@@ -109,7 +114,8 @@ body {
     width: 100%;
 
     .navbar-header {
-        float: none;
+      float: none;
+
       .navbar-toggle {
         float: right;
         display: block;
@@ -175,6 +181,7 @@ body {
           }
 
           span {
+
             &:after,
             &:before {
               background-color: white !important;
@@ -246,6 +253,7 @@ body {
       }
     }
   }
+
   .home {
     height: 100vh;
     background-image: url("../img/home-light.png");
@@ -334,33 +342,36 @@ body {
       }
     }
   }
+
   .about-me {
     @extend %section;
-    .info{
+
+    .info {
       margin: 32px 0 0 22px;
       line-height: 2;
 
-      p.h1{
+      p.h1 {
         font-size: $bigFont;
       }
 
-      h3{
+      h3 {
         color: #17a2b8;
         font-weight: normal;
       }
 
-      table{
+      table {
         margin-top: 30px;
 
-        th{
+        th {
           border-top: 0;
           padding: 0;
 
-          label{
+          label {
             font-size: $normalFont;
             font-weight: 500
           }
-          span{
+
+          span {
             font-size: $normalFont;
             font-weight: normal
           }
@@ -369,22 +380,22 @@ body {
     }
   }
 
-  .services{
-    @extend  %section;
+  .services {
+    @extend %section;
     background-color: $smoothGray;
 
-    .title{
+    .title {
       @extend %title;
     }
 
-    .skills{
-      .skill{
+    .skills {
+      .skill {
         padding: 10px;
         background-color: #fff;
-        box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
         margin-top: 15px;
 
-        .img{
+        .img {
           width: 30%;
           display: inline-block;
           color: $themeColor;
@@ -392,16 +403,18 @@ body {
           vertical-align: top;
         }
 
-        .skill-details{
+        .skill-details {
           display: inline-block;
           width: 59%;
           margin-left: 10px;
-          p{
+
+          p {
             padding: 0;
             margin: 0;
             line-height: 1.5;
             vertical-align: center;
-            .h4{
+
+            .h4 {
               margin-bottom: 10px;
             }
           }
@@ -410,14 +423,15 @@ body {
     }
   }
 
-  .portofolio{
+  .portofolio {
     @extend %section;
-    .title{
+
+    .title {
       @extend %title;
     }
 
-    .carousel{
-      .carousel-indicators{
+    .carousel {
+      .carousel-indicators {
         position: static;
         z-index: 0;
         width: auto;
@@ -425,7 +439,8 @@ body {
         margin-left: 0;
         text-align: left;
         list-style: none;
-        li{
+
+        li {
           display: inline-block;
           width: auto;
           height: auto;
@@ -437,23 +452,23 @@ body {
           font-weight: normal;
           font-size: $normalFont;
 
-          &:not(:first-child){
+          &:not(:first-child) {
             margin-left: 20px;
           }
 
-          &.active{
+          &.active {
             border-bottom: 2px solid $themeColor
           }
         }
       }
 
-      .carousel-inner{
+      .carousel-inner {
 
-        .hovereffect{
+        .hovereffect {
           cursor: pointer;
           margin-top: 30px;
 
-          a{
+          a {
             color: $themeColor;
 
           }
@@ -462,72 +477,75 @@ body {
     }
   }
 
-  .banner{
+  .banner {
     margin-top: 30px;
-    padding: 80px 0; 
+    padding: 80px 0;
     background-image: url('../img/hire.jpg');
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
 
-    .flex{
+    .flex {
       display: flex;
       justify-content: center;
       align-items: center;
-      
-      button{
+
+      a {
         @extend %our-btn;
         width: 50%;
       }
     }
   }
 
-  .resume{
+  .resume {
     @extend %section;
     background-color: $smoothGray;
-    .title{
+
+    .title {
       @extend %title;
     }
-    .col-md-4{
+
+    .col-md-4 {
       padding-left: 0;
       padding-right: 0;
 
-      .time{
+      .time {
         margin-top: 30px;
 
-        span.h5{
-          
-          &:first-of-type{
+        span.h5 {
+
+          &:first-of-type {
             color: $themeColor;
           }
 
-          &:last-of-type::before{
+          &:last-of-type::before {
             content: " /"
           }
         }
-      
-      .line{
-        position: relative;
-        hr{
+
+        .line {
+          position: relative;
+
+          hr {
             height: 6px;
             background-color: $themeColor;
-    
-            &:before{
+
+            &:before {
               content: '';
               position: absolute;
               width: 15px;
               height: 15px;
               background-color: #555;
             }
-            
-            &:after{
+
+            &:after {
               content: '';
               position: absolute;
               bottom: -24px;
               left: -3px;
               display: block;
-              width: 7px; 
-              height: 15px; 
+              width: 7px;
+              height: 15px;
               border-left: 10px solid transparent;
               border-right: 10px solid transparent;
               border-top: 10px solid #555;
@@ -535,11 +553,11 @@ body {
           }
         }
 
-        &_info{
+        &_info {
           margin-top: 30px;
           padding-right: 10px;
           color: $mainColor;
-          
+
           p:first-child {
             font-weight: 500;
             font-size: $upNormal;
@@ -548,15 +566,227 @@ body {
       }
     }
   }
+
+  .clients {
+    @extend %section;
+
+    .title{
+      @extend %title;
+      text-align: center;
+      .h1{
+        font-weight: bold;
+        &:after {
+          left: 0;
+          width: 100% !important;
+        }
+      }
+
+      p{
+        padding: 10px;
+        font-size: 14px !important;
+      }
+    }
+
+    .owl-carousel {
+      margin-top: 30px; 
+      
+      .item {
+        color: $mainColor;
+        font-size: $normalFont;
+        text-align: center;
+        overflow: hidden;
+        min-height: 290px;
+
+        .quote{
+          margin-top: 30px;
+          font-size: $hugefont;
+          color: $themeColor;
+        }
+
+        .author {
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          margin-bottom: 10px;
+
+          &-img{
+            max-width: 50px;
+            margin:0;
+            padding: 0;
+            border: 2px solid $themeColor;
+            border-radius: 50%;
+          }
+
+          &-name{
+            text-align: left;
+            margin-left: 10px;
+            font-size: 14px;
+            padding: 0;
+            h6{
+              margin: 0;
+              font-size: $normalFont;
+            }
+          }
+        }
+
+      .testimonial {
+        padding: 30px 0 10px;
+      }
+
+      .carousel .overview {
+        font-style: italic;
+
+        b {
+          text-transform: uppercase;
+          color: #7AA641;
+        }
+      }
+
+      .carousel-indicators {
+        bottom: -40px;
+
+        li {
+          background: #999;
+          border-color: transparent;
+          box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+
+          &,
+          li.active {
+            width: 10px;
+            height: 10px;
+            margin: 1px 3px;
+            border-radius: 50%;
+          }
+
+          .active {
+            background: #555;
+            box-shadow: inset 0 2px 1px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+      }
+    }
+  }
+
+  .blog{
+    .title{
+      @extend %title;
+    }
+
+    .posts{
+      margin-top: 40px;
+      .post{
+        overflow: hidden;
+        border-radius: 5px;
+        
+        &-img{
+          position: relative;
+          .date{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 5px 15px ;
+            font-size: 14px;
+            background-color: $themeColor;
+            color: white;
+
+            p{
+              padding: 0;
+              margin: 0;
+            }
+          }
+        }
+
+        &-info{
+          font-size: 13px;
+
+          .h5{
+            font-size: $normalFont;
+          }
+
+          p:last-of-type{
+            span{
+              color: $themeColor;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contact{
+    @extend %section;
+
+    .title{
+      @extend %title;
+    }
+
+    label{
+      font-size: $upNormal;
+      margin: 28px 0;
+    }
+    .form{
+      input, textarea{
+        color: $mainColor;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        border-radius: 0;
+        box-shadow: none;
+        transition: all 0.4s ease;
+
+        &:focus{
+          border-bottom: 1px solid $themeColor;
+        }
+      }
+      textarea{
+        resize: none;
+      }
+      button{
+        @extend %our-btn
+      }
+    }
+
+    &-info{
+      ul{
+        li{
+          .contact--details{
+            display: inline-block;
+            border-left: 1px solid #bbb;
+            padding-left: 20px;
+            margin-left: 25px;
+            span{
+              color: $themeColor
+            }
+          }
+          span{
+            i{
+              max-width: 20px;
+              color: $themeColor;
+              font-size: 34px;
+            }
+          }
+        }
+      }
+      
+    }
+  }
 }
 
 // meadias
-%title{
+%title {
 
-  .h1{
-    font-size: $bigFont;
+  .h1 {
+    display: inline-block;
+    font-size: 40px;
+    color: #000;
+    font-weight: 800;
+    letter-spacing: -.25px;
     position: relative;
-    &:after{
+    margin-bottom: 10px;
+    
+    &:after {
       background-color: $themeColor;
       bottom: 0;
       content: '';
@@ -568,10 +798,11 @@ body {
     }
   }
   
-  p{
-    font-size: $normalFont;
+  p {
+    font-size: $smallFont;
   }
 }
+
 %section {
   min-height: 100vh;
   padding-top: 12%;
@@ -581,9 +812,9 @@ body {
   margin-top: 20px;
   border: none;
   margin-right: 10px;
-  min-width: 10%;
+  min-width: 20%;
   border-radius: 30px;
-  box-shadow: 0 3px 6px 0 rgba(0,0,0,.2);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2);
   padding: 10px;
   outline: none;
 
@@ -595,6 +826,7 @@ body {
     background-color: #337ab7 !important;
   }
 }
+
 // js Classes
 .bgt {
   background-color: #fff !important;
@@ -613,6 +845,7 @@ body {
     transform: translateY(20px);
   }
 }
+
 @keyframes bgt {
   from {
     background-color: transparent;

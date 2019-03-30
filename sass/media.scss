@@ -96,8 +96,10 @@
   }
 
   .flex{
-    
-    button{
+
+      justify-content: left !important;
+      align-items: left !important;
+    a{
       width: 100% !important;
     }
   }
@@ -110,6 +112,7 @@
   }
   %section{
     margin-top: 30px;
+    padding-top: 60px !important;
   }
 }
 
@@ -143,6 +146,10 @@
       }
     }
   }
+  .flex{
+    justify-content: left !important;
+    align-items: left !important
+}
 }
 
 // Laptop Screen == md
@@ -155,5 +162,9 @@
       width: 430px;
       height: 525px;
     }
+  }
+
+  %section{
+    padding-top: 100px !important;
   }
 }
