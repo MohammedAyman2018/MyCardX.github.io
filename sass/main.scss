@@ -214,6 +214,7 @@ body {
             color: #4770d9 !important;
           }
 
+
           a {
             color: #fff;
             display: inline-block;
@@ -255,6 +256,7 @@ body {
   }
 
   .home {
+    z-index: 999999;
     height: 100vh;
     background-image: url("../img/home-light.png");
     background-size: cover;
@@ -772,6 +774,55 @@ body {
       
     }
   }
+
+  footer{
+    margin-top: 50px;
+    padding-top: 9%;
+    background-color: #151515;
+    color: #888;
+    
+    ul{
+      margin-top: 15px;
+      label{
+        color: #f0f0f0;
+      }
+      li{
+        padding: 10px 0px;
+        a{
+          transition: 0.4s;
+          color: #888;
+          &:hover{
+            color: #c8c8c8;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .footer-contact{
+      ul{
+        margin: 0;
+        padding: 0;
+        
+        li{
+          margin: 0 5px;
+          padding: 0;
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          border-radius: 50%;
+          cursor: pointer;
+          background-color: #080;
+          color: white;
+          transition: 0.4s;
+          
+          &:hover{
+            color: $themeColor
+          }
+        }
+      }
+    }
+  }
 }
 
 // meadias
@@ -823,7 +874,7 @@ body {
   }
 
   &:last-child:hover {
-    background-color: #337ab7 !important;
+    background-color: #337ab7 ;
   }
 }
 

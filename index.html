@@ -20,6 +20,7 @@
   <link href="css/animate.css" rel="stylesheet">
   <link href="css\media.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/change-color.css" rel="stylesheet">
   <link href="css/owl.carousel.min.css" rel="stylesheet">
   <link href="css/owl.theme.default.min.css" rel="stylesheet">
   <!-- Bootstrap -->
@@ -145,7 +146,7 @@
           <div class="container">
             <h2>Hello, my name is <strong>Daniel</strong></h2>
             <div class="typed_wrap">
-              <h1>I'm a <span class="typed"></span></h1>
+              <h1>I'm a <span class="typed js"></span></h1>
             </div>
             <p>I'm a Web Developer with extensive experience for over 3 years. My expertise is to <br> create and design
               Websites, Apps and more...</p>
@@ -235,7 +236,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="skill">
               <div class="img text-center">
-                <i class="fab fa-css3-alt"></i>
+                <i class="fab fa-css3-alt js"></i>
               </div>
               <div class="skill-details text-left">
                 <p class="h4">Design Trends</p>
@@ -248,7 +249,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="skill">
               <div class="img text-center">
-                <i class="far fa-images"></i>
+                <i class="far fa-images js"></i>
               </div>
               <div class="skill-details text-left">
                 <p class="h4">PSD Design</p>
@@ -261,7 +262,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="skill">
               <div class="img text-center">
-                <i class="fab fa-vuejs"></i>
+                <i class="fab fa-vuejs js"></i>
               </div>
               <div class="skill-details text-left">
                 <p class="h4">Customer Support</p>
@@ -274,7 +275,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="skill">
               <div class="img text-center">
-                <i class="fab fa-wordpress-simple"></i>
+                <i class="fab fa-wordpress-simple js"></i>
               </div>
               <div class="skill-details text-left">
                 <p class="h4">Web Development</p>
@@ -287,7 +288,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="skill">
               <div class="img text-center">
-                <i class="fas fa-arrows-alt"></i>
+                <i class="fas fa-arrows-alt js"></i>
               </div>
               <div class="skill-details text-left">
                 <p class="h4">Fully Responsive</p>
@@ -300,7 +301,7 @@
           <div class="col-md-4 col-sm-6">
             <div class="skill">
               <div class="img text-center">
-                <i class="fas fa-rocket"></i>
+                <i class="fas fa-rocket js"></i>
               </div>
               <div class="skill-details text-left">
                 <p class="h4">Branding</p>
@@ -668,7 +669,7 @@
   </div>
   </section>
   <!-- Blog -->
-  <section class="blog">
+  <section id="blog" class="blog">
     <div class="container">
       <div class="title">
         <span class="h1">My Blog</span>
@@ -737,6 +738,7 @@
       <div class="row">
         <div class="col-md-7">
           <label for="form">Message Me</label>
+          
           <div class="form">
             <div class="row">
               <div class="col-md-6 form-group">
@@ -747,13 +749,13 @@
               </div>
 
               <div class="col-md-12 form-group">
-                <input type="text" class="form-control" placeholder="Subject" id="usr">
+                <input type="text" class="form-control" placeholder="Subject" id="sub">
               </div>
               
               <div class="col-md-12 form-group">
                 <textarea class="form-control" rows="5" placeholder="Message" id="comment"></textarea>
-                
               </div>
+              <button class="btn btn-primary">Submit</button>
             </div>
           </div>
         </div>
@@ -763,7 +765,7 @@
           <div class="contact-info">
             <p>Always available for freelance work if the right project comes along, Feel free to contact me!</p>
             <ul class="list-unstyled">
-              <li>                  
+              <li>
                 <span><i class="fab fa-vuejs"></i></span>
                 <div class="contact--details">
                   <p class="h4">Name</p>
@@ -771,15 +773,15 @@
                 </div>
               </li>
 
-              <li>                  
+              <li>
                 <span><i class="fas fa-map-marker-alt"></i></span>
                 <div class="contact--details">
                   <p class="h4">Location</p>
-                  <p>4155 Mann Island, Liverpool, United Kingdom</p>
+                  <p>4155 Mann Island, Liverpool,<br> United Kingdom</p>
                 </div>
               </li>
 
-              <li>                  
+              <li>
                 <span><i class="fas fa-phone"></i></span>
                 <div class="contact--details">
                   <p class="h4">Call Me</p>
@@ -788,7 +790,7 @@
               </li>
 
 
-              <li>                  
+              <li>
                 <span><i class="far fa-paper-plane"></i></span>
                 <div class="contact--details">
                   <p class="h4">Name</p>
@@ -799,9 +801,80 @@
           </div>
         </div>
       </div>
-      <button class="btn btn-primary">Submit</button>
     </div>
   </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-4 ">
+          <ul class="list-unstyled">
+            <label for="ul">About</label>
+            <li><a href="#home">Home</a> </li>
+            <li><a href="#services">My Services</a> </li>
+            <li><a href="#portofolio">Portofolio</a> </li>
+            <li><a href="#blog">My Blog</a> </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 ">
+          <ul class="list-unstyled">
+            <label for="ul">Information</label>
+            <li><a href="#home">Terms & Condition</a> </li>
+            <li><a href="#services">Privacy Policy</a> </li>
+            <li><a href="#portofolio">Curriculum Vitae</a> </li>
+            <li><a href="#blog">Partners</a> </li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4 ">
+          <ul class="list-unstyled">
+            <label for="ul">Support</label>
+            <li><a href="#home">Contact Me</a> </li>
+            <li><a href="#services">FAQs</a> </li>
+            <li><a href="#blog">Report an issue</a> </li>
+          </ul>
+        </div>
+        <div class="col-md-3 ">
+          <img src="img/img-logo-dark.png" width="130px" alt="CardX" class="img-responsive">
+          <p>Modern Personal Portfolio / CV / vCard / HTML5 Template.</p>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-contact">
+        <div class="row">
+          <div class="col-md-6">
+            <p>Copyright © 2019 CardX, all rights reserved. Developed by <a href="https://themeforest.net/user/exill">Exill</a> .</p>
+          </div>
+
+          <div class="col-md-6 text-center">
+            <ul class="list-inline">
+              <li style="background-color: #1da1f2;">
+                  <i class="fab fa-twitter" ></i>
+              </li>
+              <li style="background-color: #c32361;">
+                <i class="fab fa-instagram" ></i>
+              </li>
+              <li style="background-color: #0077b5;">
+                  <i class="fab fa-invision" ></i>
+              </li>
+              <li style="background-color: #c33a38;">
+                  <i class="fab fa-youtube" ></i>
+              </li>
+              <li style="background-color: #6e5494">
+                  <i class="fab fa-github" ></i>
+              </li>
+              <li style="background-color: #c32361;">
+                  <i class="fas fa-basketball-ball" ></i>
+              </li>
+              <li  style="background-color: #3b5998;" >
+                  <i class="fab fa-facebook" ></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- ================ Scripts =============== -->
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -813,7 +886,5 @@
   <script src="js/wow.min.js"></script>
   <script src="js/plugin.js"></script>
   <script src="js/owl.carousel.min.js"></script>
-
 </body>
-
 </html>

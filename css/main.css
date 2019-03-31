@@ -162,6 +162,7 @@ body {
             -webkit-transform: scaleX(2);
             transform: scaleX(2); }
   body .home {
+    z-index: 999999;
     height: 100vh;
     background-image: url("../img/home-light.png");
     background-size: cover;
@@ -456,6 +457,39 @@ body {
     max-width: 20px;
     color: #17a2b8;
     font-size: 34px; }
+  body footer {
+    margin-top: 50px;
+    padding-top: 9%;
+    background-color: #151515;
+    color: #888; }
+    body footer ul {
+      margin-top: 15px; }
+      body footer ul label {
+        color: #f0f0f0; }
+      body footer ul li {
+        padding: 10px 0px; }
+        body footer ul li a {
+          transition: 0.4s;
+          color: #888; }
+          body footer ul li a:hover {
+            color: #c8c8c8;
+            text-decoration: none; }
+    body footer .footer-contact ul {
+      margin: 0;
+      padding: 0; }
+      body footer .footer-contact ul li {
+        margin: 0 5px;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #080;
+        color: white;
+        transition: 0.4s; }
+        body footer .footer-contact ul li:hover {
+          color: #17a2b8; }
 
 body .services .title .h1, body .portofolio .title .h1, body .resume .title .h1, body .clients .title .h1, body .blog .title .h1, body .contact .title .h1 {
   display: inline-block;
@@ -493,7 +527,7 @@ body .home .info button, body .banner .flex a, body .contact .form button {
   body .home .info button:first-child:hover, body .banner .flex a:first-child:hover, body .contact .form button:first-child:hover {
     background-color: #FFF !important; }
   body .home .info button:last-child:hover, body .banner .flex a:last-child:hover, body .contact .form button:last-child:hover {
-    background-color: #337ab7 !important; }
+    background-color: #337ab7; }
 
 .bgt {
   background-color: #fff !important;
